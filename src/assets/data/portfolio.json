@@ -1,0 +1,199 @@
+[
+  {
+    "id": "3b8c0389-70fd-48ee-82dc-5751e59acd21",
+    "name": "Cristian Quinto",
+    "age": "27",
+    "degree": "Jr. Web Developer",
+    "email": "ezequielqmacias@gmail.com",
+    "phone": "+54 9 264 626-9903",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "image": {
+      "id": "117d502f-e933-45a9-a161-3bdfc6e6106f",
+      "path": "https://ui-avatars.com/api/?name=Cristian+Quinto&size=255"
+    },
+    "social": {
+      "id": "ea54a3bb-aa85-46cd-8fc3-8dc838ef0727",
+      "link": "https://uadd.me/cqube"
+    },
+    "skills": [
+      {
+        "id": "894bbddb-6d43-4c1f-9943-3db042ebfe78",
+        "name": "Backend",
+        "tools": [
+          {
+            "id": "c7c56dec-e054-404c-a094-bfc1b2e1f390",
+            "name": "Java"
+          },
+          {
+            "id": "618e077f-ae4f-4add-9de8-c42eaea0c75d",
+            "name": "TS"
+          },
+          {
+            "id": "a04f69dc-be02-48b8-8cef-73af4db9c424",
+            "name": "PHP"
+          }
+        ]
+      },
+      {
+        "id": "a13e8dd5-f4bc-40f8-8bfd-43fc4064c7c4",
+        "name": "Frontend",
+        "tools": [
+          {
+            "id": "98c8a2c8-341b-40dd-a984-1cd7031feadc",
+            "name": "HTML"
+          },
+          {
+            "id": "8452a560-ea9f-4120-84ad-0a3aa0f7a86c",
+            "name": "CSS"
+          },
+          {
+            "id": "3c2b9817-d85f-425f-8ad1-1f0db89c35ee",
+            "name": "JS"
+          }
+        ]
+      },
+      {
+        "id": "558f8094-4799-4696-8680-b6b20c08650c",
+        "name": "Frameworks",
+        "tools": [
+          {
+            "id": "9eb97332-1930-4240-a044-59792eed4a19",
+            "name": ".NET"
+          },
+          {
+            "id": "b9f3eeb6-8e63-498d-95e3-3a138932d0db",
+            "name": "Node.js"
+          },
+          {
+            "id": "01eb2127-b545-4f5f-a21d-4fcb9024a362",
+            "name": "Bootstrap"
+          }
+        ]
+      }
+    ],
+    "jobs": [
+      {
+        "id": "19126777-3b32-4623-a2a8-d879b21d0f7b",
+        "position": "Java Developer",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
+        "startDate": "July 2021",
+        "finishDate": "December 2021",
+        "achievements": [
+          {
+            "id": "1c8459f8-3853-4d26-b5f6-0154ca437de0",
+            "description": "Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit."
+          },
+          {
+            "id": "70816a8d-ef86-40b7-895a-a7f18a65df67",
+            "description": "Lorem ipsum dolor sit amet, 10% consectetuer adipiscing elit."
+          },
+          {
+            "id": "e261f935-f75d-41cf-85d1-2a6525e35242",
+            "description": "Lorem ipsum dolor sit amet, 10% consectetuer adipiscing elit."
+          }
+        ]
+      },
+      {
+        "id": "7155439c-23ca-4046-9854-5a46a22d3503",
+        "position": "PHP Developer",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
+        "startDate": "January 2022",
+        "finishDate": "March 2022",
+        "achievements": [
+          {
+            "id": "c8e3a92d-f6c3-46c7-9c1b-72fbe865b96f",
+            "description": "Lorem ipsum dolor sit amet, 50% consectetuer adipiscing elit."
+          },
+          {
+            "id": "3a66194a-e1a4-4c4f-a4b3-b55d15bcf50b",
+            "description": "Lorem ipsum dolor sit amet, 25% consectetuer adipiscing elit."
+          },
+          {
+            "id": "eef13be5-88e5-42c5-b05a-7d9f2adfffbb",
+            "description": "Lorem ipsum dolor sit amet, 25% consectetuer adipiscing elit."
+          }
+        ]
+      },
+      {
+        "id": "31a548a8-4fa2-4f41-a6d6-9ccc7c749f59",
+        "position": ".NET Developer",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
+        "startDate": "March 2022",
+        "finishDate": "Present",
+        "achievements": [
+          {
+            "id": "a1e31775-2d1d-45f0-ba53-542326d0e0db",
+            "description": "Lorem ipsum dolor sit amet, 20% consectetuer adipiscing elit."
+          },
+          {
+            "id": "701afd08-d52f-4367-8039-61bf41af3c26",
+            "description": "Lorem ipsum dolor sit amet, 40% consectetuer adipiscing elit."
+          },
+          {
+            "id": "dad65dfe-0e8e-4b83-beeb-574fbdc3b6c2",
+            "description": "Lorem ipsum dolor sit amet, 40% consectetuer adipiscing elit."
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id": "4c4d6a26-88ee-47b1-bfb1-bee941434a62",
+        "name": "AGME",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.",
+        "releaseDate": "September 2021",
+        "image": {
+          "id": "d7180092-5837-4054-b5a2-e240534006d9",
+          "path": "https://ui-avatars.com/api/?name=A+G&size=255"
+        },
+        "technologies": [
+          {
+            "id": "6f6b47b6-be8c-47ac-9d62-da0eb84c45b2",
+            "name": "PHP"
+          },
+          {
+            "id": "56d1156d-1b98-483c-b56a-93f1b6fe6c33",
+            "name": "HTML"
+          },
+          {
+            "id": "08ea471c-deec-4e71-87a7-b77a5f164424",
+            "name": "CSS"
+          },
+          {
+            "id": "b7501c39-7c9d-42fa-88cf-78e9315dd01b",
+            "name": "JS"
+          }
+        ]
+      },
+      {
+        "id": "bab79075-265a-429d-82be-d3103ef33291",
+        "name": "INTI",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.",
+        "releaseDate": "January 2023",
+        "image": {
+          "id": "887fc3f0-db5e-44d4-aae1-c4d9d83dfd3a",
+          "path": "https://ui-avatars.com/api/?name=I+N&size=255"
+        },
+        "technologies": [
+          {
+            "id": "e39aece4-dcf1-4ab5-b4df-239bc39fdec1",
+            "name": "JAVA"
+          },
+          {
+            "id": "36fcb901-b668-465f-b26e-0e3b3c83a1b2",
+            "name": "SPRING BOOT"
+          },
+          {
+            "id": "a89d4400-a823-46b1-ac47-ca6fb90bdcbf",
+            "name": "ANGULAR"
+          }
+        ]
+      }
+    ],
+    "account": {
+      "id": "375b0bdb-c1ae-494e-90ae-e780c8fe2cf3",
+      "username": "qmacias",
+      "password": "Q94macias*"
+    }
+  }
+]
