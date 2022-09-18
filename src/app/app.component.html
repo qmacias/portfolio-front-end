@@ -1,25 +1,25 @@
-<div class="container">
+<div class="container" *ngIf="jsonData">
   <div class="card">
     <div id="resume-header" class="row">
       <div class="col-3">
         <img
           id="profile-picture"
-          src="https://ui-avatars.com/api/?name=Cristian+Quinto&size=255"
-          alt=""
+          [src]="jsonData.user.image.path"
+          [alt]="jsonData.user.image.id"
         />
       </div>
       <div class="col">
-        <h1>Cristian Quinto</h1>
-        <h2>Jr. Web Developer</h2>
+        <h1>{{ jsonData.user.name }}</h1>
+        <h2>{{ jsonData.user.degree }}</h2>
         <ul>
-          <li>Age: 27</li>
-          <li>Mail: ezequielqmacias@gmail.com</li>
-          <li>Phone: +54 9 264 626-9903</li>
+          <li>Age: {{ jsonData.user.age }}</li>
+          <li>Mail: {{ jsonData.user.email }}</li>
+          <li>Phone: {{ jsonData.user.phone }}</li>
           <li>
             Social:
-            <a target="_blank" href="https://uadd.me/cqube"
-              >https://uadd.me/cqube</a
-            >
+            <a target="_blank" [attr.href]="jsonData.user.social.link">
+              {{ jsonData.user.social.link }}
+            </a>
           </li>
         </ul>
       </div>
@@ -29,156 +29,61 @@
     <div class="col">
       <div class="card">
         <h2>Carrer Summary</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </p>
+        <p>{{ jsonData.user.summary }}</p>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <div>
-        <h3>Work Experience</h3>
-        <div class="card position">
-          <h5>Java Developer</h5>
+      <h3>Work Experience</h3>
+      <div *ngIf="jsonData.user.jobs?.length">
+        <div class="card position" *ngFor="let job of jsonData.user.jobs">
+          <h5>{{ job.position }}</h5>
           <h6 class="text-muted">
-            <span>July 2021</span> - <span>December 2021</span>
+            <span>{{ job.startDate }}</span> -
+            <span>{{ job.finishDate }}</span>
           </h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            sapiente sed pariatur sint exercitationem eos expedita eveniet
-            veniam ullam, quia neque facilis dicta voluptatibus. Eveniet
-            doloremque ipsum itaque obcaecati nihil.
-          </p>
+          <p>{{ job.description }}</p>
           <strong>Achievements:</strong>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 10% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 10% consectetuer adipiscing elit.
-            </li>
-          </ul>
-        </div>
-        <div class="card position">
-          <h5>PHP Developer</h5>
-          <h6 class="text-muted">
-            <span>January 2022</span> - <span>March 2022</span>
-          </h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            sapiente sed pariatur sint exercitationem eos expedita eveniet
-            veniam ullam, quia neque facilis dicta voluptatibus. Eveniet
-            doloremque ipsum itaque obcaecati nihil.
-          </p>
-          <strong>Achievements:</strong>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, 50% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 25% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 25% consectetuer adipiscing elit.
-            </li>
-          </ul>
-        </div>
-        <div class="card position">
-          <h5>.NET Developer</h5>
-          <h6 class="text-muted">
-            <span>March 2022</span> - <span>Present</span>
-          </h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            sapiente sed pariatur sint exercitationem eos expedita eveniet
-            veniam ullam, quia neque facilis dicta voluptatibus. Eveniet
-            doloremque ipsum itaque obcaecati nihil.
-          </p>
-          <strong>Achievements:</strong>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, 20% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 40% consectetuer adipiscing elit.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, 40% consectetuer adipiscing elit.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h3>Projects</h3>
-        <div class="card position">
-          <h5>AGME</h5>
-          <h6 class="text-muted">
-            <span>September 2021</span>
-          </h6>
-          <div class="row">
-            <div class="col-3">
-              <img
-                id="profile-picture"
-                src="https://ui-avatars.com/api/?name=A+G&size=255"
-                alt=""
-              />
-            </div>
-            <div class="col">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                earum corporis at accusamus quisquam hic quos vel? Tenetur,
-                ullam veniam consequatur esse quod cum, quam cupiditate
-                assumenda natus maiores aperiam.
-              </p>
-              <strong>Technologies:</strong>
-              <span class="badge badge-secondary mx-1">PHP</span>
-              <span class="badge badge-secondary mr-1">HTML</span>
-              <span class="badge badge-secondary mr-1">CSS</span>
-              <span class="badge badge-secondary">JS</span>
-            </div>
+          <div *ngIf="job.achievements?.length">
+            <ul
+              [style.margin-bottom]="0"
+              *ngFor="let achievement of job.achievements"
+            >
+              <li>{{ achievement.description }}</li>
+            </ul>
           </div>
         </div>
-        <div class="card position">
-          <h5>INTI</h5>
+      </div>
+      <div *ngIf="jsonData.user.projects?.length">
+        <h3>Projects</h3>
+        <div
+          class="card position"
+          *ngFor="let project of jsonData.user.projects"
+        >
+          <h5>{{ project.name }}</h5>
           <h6 class="text-muted">
-            <span>January 2023</span>
+            <span>{{ project.releaseDate }}</span>
           </h6>
           <div class="row">
             <div class="col-3">
               <img
                 id="profile-picture"
-                src="https://ui-avatars.com/api/?name=I+N&size=255"
-                alt=""
+                [src]="project.image.path"
+                [alt]="project.image.id"
               />
             </div>
             <div class="col">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                earum corporis at accusamus quisquam hic quos vel? Tenetur,
-                ullam veniam consequatur esse quod cum, quam cupiditate
-                assumenda natus maiores aperiam.
-              </p>
-              <strong>Technologies:</strong>
-              <span class="badge badge-secondary mx-1">JAVA</span>
-              <span class="badge badge-secondary mr-1">SPRING BOOT</span>
-              <span class="badge badge-secondary">ANGULAR</span>
+              <p>{{ project.description }}</p>
+              <strong *ngIf="project.technologies?.length">
+                Technologies:
+              </strong>
+              <span
+                class="badge badge-secondary mr-1"
+                *ngFor="let technology of project.technologies"
+              >
+                {{ technology.name }}
+              </span>
             </div>
           </div>
         </div>
@@ -186,29 +91,19 @@
     </div>
     <div class="col-3">
       <h3>Skills & Tools</h3>
-      <div class="card">
-        <h5>Backend</h5>
-        <ul>
-          <li>Java</li>
-          <li>TS</li>
-          <li>PHP</li>
-        </ul>
-        <h5>Frontend</h5>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
-        <h5>Frameworks</h5>
-        <ul>
-          <li>.NET</li>
-          <li>Node.js</li>
-          <li>Bootstrap</li>
-        </ul>
+      <div class="card" *ngIf="jsonData.user.skills?.length">
+        <div *ngFor="let skill of jsonData.user.skills">
+          <h5>
+            {{ skill.name }}
+          </h5>
+          <ul [style.margin-bottom]="0" *ngFor="let tool of skill.tools">
+            <li>{{ tool.name }}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div id="resume-footer" class="row">
-    <div class="col">Designed by @qmacias</div>
+    <div class="col">Copyright © {{ dateString }} | All Rights Reserved</div>
   </div>
 </div>

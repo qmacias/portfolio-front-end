@@ -1,5 +1,5 @@
-[
-  {
+{
+  "user": {
     "id": "3b8c0389-70fd-48ee-82dc-5751e59acd21",
     "name": "Cristian Quinto",
     "age": "27",
@@ -196,4 +196,4 @@
       "password": "Q94macias*"
     }
   }
-]
+}
