@@ -16,25 +16,28 @@ export class JsonService {
 }
 
 export class Portfolio {
-  user: User;
+  person: Person;
   constructor(obj?: any) {
-    this.user = obj?.user || null;
+    this.person = obj?.person || null;
   }
 }
 
-export class User {
+export class Person {
   id: string;
   name: string;
   age: number;
   degree: string;
   email: string;
   phone: string;
+  address: Address;
   summary: string;
   image: Image;
   social: Social;
+  education: Education[];
   skills: Skill[];
   jobs: Job[];
   projects: Project[];
+  user: User;
   constructor(obj?: any) {
     this.id = obj?.id || null;
     this.name = obj?.name || null;
@@ -42,12 +45,24 @@ export class User {
     this.degree = obj?.degree || null;
     this.email = obj?.email || null;
     this.phone = obj?.phone || null;
+    this.address = obj?.address || null;
     this.summary = obj?.summary || null;
     this.image = obj?.image || null;
     this.social = obj?.social || null;
+    this.education = obj?.education || null;
     this.skills = obj?.skills || null;
     this.jobs = obj?.jobs || null;
     this.projects = obj?.projects || null;
+    this.user = obj?.user || null;
+  }
+}
+
+export class Address {
+  id: string;
+  homeAddress: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.homeAddress = obj?.homeAddress || null;
   }
 }
 
@@ -66,6 +81,29 @@ export class Social {
   constructor(obj?: any) {
     this.id = obj?.id || null;
     this.link = obj?.link || null;
+  }
+}
+
+export class Education {
+  id: string;
+  reference: string;
+  category: string;
+  description: string;
+  location: string;
+  modality: string;
+  schedule: string;
+  certified: boolean;
+  date: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.reference = obj?.reference || null;
+    this.category = obj?.category || null;
+    this.description = obj?.description || null;
+    this.location = obj?.location || null;
+    this.modality = obj?.modality || null;
+    this.schedule = obj?.schedule || null;
+    this.certified = obj?.certified || null;
+    this.date = obj?.date || null;
   }
 }
 
@@ -138,5 +176,16 @@ export class Technology {
   constructor(obj?: any) {
     this.id = obj?.id || null;
     this.name = obj?.name || null;
+  }
+}
+
+export class User {
+  id: string;
+  username: string;
+  password: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.username = obj?.username || null;
+    this.password = obj?.password || null;
   }
 }
