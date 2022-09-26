@@ -4,21 +4,22 @@
       <div class="col-3">
         <img
           id="profile-picture"
-          [src]="jsonData.user.image.path"
-          [alt]="jsonData.user.image.id"
+          [src]="jsonData.person.image.path"
+          [alt]="jsonData.person.image.id"
         />
       </div>
       <div class="col">
-        <h1>{{ jsonData.user.name }}</h1>
-        <h2>{{ jsonData.user.degree }}</h2>
+        <h1>{{ jsonData.person.name }}</h1>
+        <h2>{{ jsonData.person.degree }}</h2>
         <ul>
-          <li>Age: {{ jsonData.user.age }}</li>
-          <li>Mail: {{ jsonData.user.email }}</li>
-          <li>Phone: {{ jsonData.user.phone }}</li>
+          <li>Age: {{ jsonData.person.age }}</li>
+          <li>Mail: {{ jsonData.person.email }}</li>
+          <li>Phone: {{ jsonData.person.phone }}</li>
+          <li>Address: {{ jsonData.person.address.homeAddress }}</li>
           <li>
             Social:
-            <a target="_blank" [attr.href]="jsonData.user.social.link">
-              {{ jsonData.user.social.link }}
+            <a target="_blank" [attr.href]="jsonData.person.social.link">
+              {{ jsonData.person.social.link }}
             </a>
           </li>
         </ul>
@@ -29,15 +30,45 @@
     <div class="col">
       <div class="card">
         <h2>Carrer Summary</h2>
-        <p>{{ jsonData.user.summary }}</p>
+        <p>{{ jsonData.person.summary }}</p>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
+      <h3>Education</h3>
+      <div *ngIf="jsonData.person.education?.length">
+        <div
+          class="card position"
+          *ngFor="let item of jsonData.person.education"
+        >
+          <h5>
+            {{ item.category }}
+            <span class="text-muted">({{ item.schedule }})</span>
+          </h5>
+          <p>
+            <i [style.color]="'grey'">Modalidad:</i> {{ item.modality }}
+            <br />
+            <i [style.color]="'grey'">Lugar:</i> {{ item.location }}
+            <br />
+            <i [style.color]="'grey'">Descripción:</i> {{ item.description }}
+            <br />
+            <i [style.color]="'grey'">Fecha de realización:</i> {{ item.date }}
+            <br />
+            <span *ngIf="item.certified">
+              <br />
+              <i [style.color]="'grey'">ID:</i> {{ item.id }}
+              <br />
+              <i [style.color]="'grey'">URL:</i>
+              <a [attr.href]="item.reference"> {{ item.reference }}</a>
+              <br />
+            </span>
+          </p>
+        </div>
+      </div>
       <h3>Work Experience</h3>
-      <div *ngIf="jsonData.user.jobs?.length">
-        <div class="card position" *ngFor="let job of jsonData.user.jobs">
+      <div *ngIf="jsonData.person.jobs?.length">
+        <div class="card position" *ngFor="let job of jsonData.person.jobs">
           <h5>{{ job.position }}</h5>
           <h6 class="text-muted">
             <span>{{ job.startDate }}</span> -
@@ -55,11 +86,11 @@
           </div>
         </div>
       </div>
-      <div *ngIf="jsonData.user.projects?.length">
-        <h3>Projects</h3>
+      <h3>Projects</h3>
+      <div *ngIf="jsonData.person.projects?.length">
         <div
           class="card position"
-          *ngFor="let project of jsonData.user.projects"
+          *ngFor="let project of jsonData.person.projects"
         >
           <h5>{{ project.name }}</h5>
           <h6 class="text-muted">
@@ -91,8 +122,8 @@
     </div>
     <div class="col-3">
       <h3>Skills & Tools</h3>
-      <div class="card" *ngIf="jsonData.user.skills?.length">
-        <div *ngFor="let skill of jsonData.user.skills">
+      <div class="card" *ngIf="jsonData.person.skills?.length">
+        <div *ngFor="let skill of jsonData.person.skills">
           <h5>
             {{ skill.name }}
           </h5>

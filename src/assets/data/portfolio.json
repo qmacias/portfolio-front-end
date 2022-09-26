@@ -1,11 +1,15 @@
 {
-  "user": {
+  "person": {
     "id": "3b8c0389-70fd-48ee-82dc-5751e59acd21",
     "name": "Cristian Quinto",
     "age": "27",
     "degree": "Jr. Web Developer",
     "email": "ezequielqmacias@gmail.com",
     "phone": "+54 9 264 626-9903",
+    "address": {
+      "id": "688e35b0-d767-41f1-98c6-dd87feea9280",
+      "homeAddress": "Las Cañitas, Casa 36. Rawson"
+    },
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "image": {
       "id": "117d502f-e933-45a9-a161-3bdfc6e6106f",
@@ -15,6 +19,52 @@
       "id": "ea54a3bb-aa85-46cd-8fc3-8dc838ef0727",
       "link": "https://uadd.me/cqube"
     },
+    "education": [
+      {
+        "id": "d5b21954-7019-41ee-9316-d17ea06fb915",
+        "reference": "some URL/document",
+        "category": "Congreso Nacional",
+        "description": "15° Encuentro Electrónico Nacional, dictado por Horacio D. Vallejo y Mario Gos",
+        "location": "Facultad de Ciencias Exactas y Tecnología de Universidad Nacional de Tucumán",
+        "modality": "Presencial",
+        "schedule": "12 horas",
+        "certified": false,
+        "date": "27 y 28 de abril de 2013"
+      },
+      {
+        "id": "78182f68-7615-4965-b5ef-c597f1d5f72e",
+        "reference": "some URL/document",
+        "category": "Pasantía Escolar",
+        "description": "Convenio para Práctica Profesional desde Escuela Industrial D. F. Sarmiento",
+        "location": "INSERV Servicios Informáticos, San Juan",
+        "modality": "Presencial",
+        "schedule": "72 horas",
+        "certified": false,
+        "date": "Desde el 5 de agosto de 2013 hasta el 2 de octubre del mismo año"
+      },
+      {
+        "id": "ba4487f4-a87e-4291-90ad-8162d974547c",
+        "reference": "some URL/document",
+        "category": "Curso de Programación",
+        "description": "#SéProgramar, dictado por Cámara de Empresas de Software y Servicios Informáticos",
+        "location": "Agencia Calidad San Juan, San Juan",
+        "modality": "A distancia",
+        "schedule": "96 horas",
+        "certified": false,
+        "date": "Desde el 7 de Junio de 2021 hasta el 13 de Agosto del mismo año"
+      },
+      {
+        "id": "onbwylojbnlg",
+        "reference": "https://certificados.wecode.io/onbwylojbnlg",
+        "category": "Curso de Programación",
+        "description": "#YoProgramoSanJuan, con certificado otorgado por WeCode a través de CESSI",
+        "location": "Agencia Calidad San Juan, San Juan",
+        "modality": "A distancia",
+        "schedule": "150 horas",
+        "certified": true,
+        "date": "Desde el 30 de Agosto de 2021 hasta el 22 de Diciembre del mismo año"
+      }
+    ],
     "skills": [
       {
         "id": "894bbddb-6d43-4c1f-9943-3db042ebfe78",
@@ -190,7 +240,7 @@
         ]
       }
     ],
-    "account": {
+    "user": {
       "id": "375b0bdb-c1ae-494e-90ae-e780c8fe2cf3",
       "username": "qmacias",
       "password": "Q94macias*"
