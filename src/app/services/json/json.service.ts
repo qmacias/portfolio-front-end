@@ -91,7 +91,7 @@ export class Education {
   description: string;
   location: string;
   modality: string;
-  schedule: string;
+  schedule: number;
   certified: boolean;
   date: string;
   constructor(obj?: any) {
