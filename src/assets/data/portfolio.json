@@ -2,7 +2,7 @@
   "person": {
     "id": "3b8c0389-70fd-48ee-82dc-5751e59acd21",
     "name": "Cristian Quinto",
-    "age": "27",
+    "age": 27,
     "degree": "Jr. Web Developer",
     "email": "ezequielqmacias@gmail.com",
     "phone": "+54 9 264 626-9903",
@@ -27,7 +27,7 @@
         "description": "15° Encuentro Electrónico Nacional, dictado por Horacio D. Vallejo y Mario Gos",
         "location": "Facultad de Ciencias Exactas y Tecnología de Universidad Nacional de Tucumán",
         "modality": "Presencial",
-        "schedule": "12 horas",
+        "schedule": 12,
         "certified": false,
         "date": "27 y 28 de abril de 2013"
       },
@@ -38,7 +38,7 @@
         "description": "Convenio para Práctica Profesional desde Escuela Industrial D. F. Sarmiento",
         "location": "INSERV Servicios Informáticos, San Juan",
         "modality": "Presencial",
-        "schedule": "72 horas",
+        "schedule": 72,
         "certified": false,
         "date": "Desde el 5 de agosto de 2013 hasta el 2 de octubre del mismo año"
       },
@@ -49,7 +49,7 @@
         "description": "#SéProgramar, dictado por Cámara de Empresas de Software y Servicios Informáticos",
         "location": "Agencia Calidad San Juan, San Juan",
         "modality": "A distancia",
-        "schedule": "96 horas",
+        "schedule": 96,
         "certified": false,
         "date": "Desde el 7 de Junio de 2021 hasta el 13 de Agosto del mismo año"
       },
@@ -60,7 +60,7 @@
         "description": "#YoProgramoSanJuan, con certificado otorgado por WeCode a través de CESSI",
         "location": "Agencia Calidad San Juan, San Juan",
         "modality": "A distancia",
-        "schedule": "150 horas",
+        "schedule": 150,
         "certified": true,
         "date": "Desde el 30 de Agosto de 2021 hasta el 22 de Diciembre del mismo año"
       }
