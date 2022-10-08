@@ -55,12 +55,12 @@
             <br />
             <i [style.color]="'grey'">Fecha de realización:</i> {{ item.date }}
             <br />
-            <span *ngIf="item.certified">
+            <span *ngIf="item.isCertified">
               <br />
-              <i [style.color]="'grey'">ID:</i> {{ item.id }}
+              <i [style.color]="'grey'">ID:</i> {{ item.certificate.id }}
               <br />
               <i [style.color]="'grey'">URL:</i>
-              <a [attr.href]="item.reference"> {{ item.reference }}</a>
+              <a [attr.href]="item.certificate.url"> {{ item.certificate.url }}</a>
               <br />
             </span>
           </p>
@@ -121,14 +121,14 @@
       </div>
     </div>
     <div class="col-3">
-      <h3>Skills & Tools</h3>
+      <h3>Skills</h3>
       <div class="card" *ngIf="jsonData.person.skills?.length">
         <div *ngFor="let skill of jsonData.person.skills">
           <h5>
             {{ skill.name }}
           </h5>
-          <ul [style.margin-bottom]="0" *ngFor="let tool of skill.tools">
-            <li>{{ tool.name }}</li>
+          <ul [style.margin-bottom]="0" *ngFor="let technology of skill.technologies">
+            <li>{{ technology.name }}</li>
           </ul>
         </div>
       </div>

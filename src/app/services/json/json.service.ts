@@ -86,39 +86,48 @@ export class Social {
 
 export class Education {
   id: string;
-  reference: string;
   category: string;
   description: string;
   location: string;
   modality: string;
   schedule: number;
-  certified: boolean;
   date: string;
+  isCertified: boolean;
+  certificate: Certificate;
   constructor(obj?: any) {
     this.id = obj?.id || null;
-    this.reference = obj?.reference || null;
     this.category = obj?.category || null;
     this.description = obj?.description || null;
     this.location = obj?.location || null;
     this.modality = obj?.modality || null;
     this.schedule = obj?.schedule || null;
-    this.certified = obj?.certified || null;
     this.date = obj?.date || null;
+    this.isCertified = obj?.isCertified || null;
+    this.certificate = obj?.certificate || null;
+  }
+}
+
+export class Certificate {
+  id: string;
+  url: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.url = obj?.url || null;
   }
 }
 
 export class Skill {
   id: string;
   name: string;
-  tools: Tool[];
+  technologies: Technology[];
   constructor(obj?: any) {
     this.id = obj?.id || null;
     this.name = obj?.name || null;
-    this.tools = obj?.tools || null;
+    this.technologies = obj?.technologies || null;
   }
 }
 
-export class Tool {
+export class Technology {
   id: string;
   name: string;
   constructor(obj?: any) {
@@ -167,15 +176,6 @@ export class Project {
     this.releaseDate = obj?.releaseDate || null;
     this.image = obj?.image || null;
     this.technologies = obj?.technologies || null;
-  }
-}
-
-export class Technology {
-  id: string;
-  name: string;
-  constructor(obj?: any) {
-    this.id = obj?.id || null;
-    this.name = obj?.name || null;
   }
 }
 
