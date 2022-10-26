@@ -28,11 +28,11 @@ export class Person {
   age: number;
   degree: string;
   email: string;
-  phone: string;
-  address: Address;
+  phone: Phone[];
+  address: Address[];
   summary: string;
   image: Image;
-  social: Social;
+  social: Social[];
   education: Education[];
   skills: Skill[];
   jobs: Job[];
@@ -57,12 +57,27 @@ export class Person {
   }
 }
 
-export class Address {
+
+export class Phone {
   id: string;
-  homeAddress: string;
+  type: string;
+  number: string;
   constructor(obj?: any) {
     this.id = obj?.id || null;
-    this.homeAddress = obj?.homeAddress || null;
+    this.type = obj?.type || null;
+    this.number = obj?.number || null;
+  }
+}
+
+
+export class Address {
+  id: string;
+  type: string;
+  description: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.type = obj?.type || null;
+    this.description = obj?.description || null;
   }
 }
 
@@ -86,10 +101,10 @@ export class Social {
 
 export class Education {
   id: string;
-  category: string;
+  category: Category;
   description: string;
   location: string;
-  modality: string;
+  modality: Modality;
   schedule: number;
   date: string;
   isCertified: boolean;
@@ -106,6 +121,27 @@ export class Education {
     this.certificate = obj?.certificate || null;
   }
 }
+
+
+export class Category {
+  id: string;
+  name: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.name = obj?.name || null;
+  }
+}
+
+
+export class Modality {
+  id: string;
+  type: string;
+  constructor(obj?: any) {
+    this.id = obj?.id || null;
+    this.type = obj?.type || null;
+  }
+}
+
 
 export class Certificate {
   id: string;
