@@ -5,60 +5,91 @@
     "age": 27,
     "degree": "Jr. Web Developer",
     "email": "ezequielqmacias@gmail.com",
-    "phone": "+54 9 264 626-9903",
-    "address": {
-      "id": "688e35b0-d767-41f1-98c6-dd87feea9280",
-      "homeAddress": "Las Cañitas, Casa 36. Rawson"
-    },
+    "phone": [
+      {
+        "id": "2294b751-be99-43aa-882f-b069fb120ffd",
+        "number": "+54 9 264 626-9903"
+      }
+    ],
+    "address": [
+      {
+        "id": "688e35b0-d767-41f1-98c6-dd87feea9280",
+        "type": "Home",
+        "description": "Las Cañitas, Casa 36. Rawson"
+      }
+    ],
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "image": {
       "id": "117d502f-e933-45a9-a161-3bdfc6e6106f",
       "path": "https://ui-avatars.com/api/?name=Cristian+Quinto&size=255"
     },
-    "social": {
-      "id": "ea54a3bb-aa85-46cd-8fc3-8dc838ef0727",
-      "link": "https://uadd.me/cqube"
-    },
+    "social": [
+      {
+        "id": "ea54a3bb-aa85-46cd-8fc3-8dc838ef0727",
+        "link": "https://uadd.me/cqube"
+      }
+    ],
     "education": [
       {
         "id": "d5b21954-7019-41ee-9316-d17ea06fb915",
-        "category": "Congreso Nacional",
+        "category": {
+          "id": "f80eb155-28b9-4a0b-86cc-dea131c27424",
+          "name": "Congreso Nacional"
+        },
         "description": "15° Encuentro Electrónico Nacional, dictado por Horacio D. Vallejo y Mario Gos",
         "location": "Facultad de Ciencias Exactas y Tecnología de Universidad Nacional de Tucumán",
-        "modality": "Presencial",
+        "modality": {
+          "id": "3ba25bd0-1ba0-4590-8f11-c54fbee0ea13",
+          "type": "Presencial"
+        },
         "schedule": 12,
         "isCertified": false,
-        "date": "27 y 28 de abril de 2013",
-        "certificate": {}
+        "date": "27 y 28 de abril de 2013"
       },
       {
         "id": "78182f68-7615-4965-b5ef-c597f1d5f72e",
-        "category": "Pasantía Escolar",
+        "category": {
+          "id": "f9b3f0c5-a53a-4b15-842b-cb3605914498",
+          "name": "Pasantía Escolar"
+        },
         "description": "Convenio para Práctica Profesional desde Escuela Industrial D. F. Sarmiento",
         "location": "INSERV Servicios Informáticos, San Juan",
-        "modality": "Presencial",
+        "modality": {
+          "id": "6676eff0-3e64-439c-81d6-a206898b248f",
+          "type": "Presencial"
+        },
         "schedule": 72,
         "isCertified": false,
-        "date": "Desde el 5 de agosto de 2013 hasta el 2 de octubre del mismo año",
-        "certificate": {}
+        "date": "Desde el 5 de agosto de 2013 hasta el 2 de octubre del mismo año"
       },
       {
         "id": "ba4487f4-a87e-4291-90ad-8162d974547c",
-        "category": "Curso de Programación",
+        "category": {
+          "id": "b7a4bc2a-b033-4671-94ff-a0c41dccece1",
+          "name": "Curso de Programación"
+        },
         "description": "#SéProgramar, dictado por Cámara de Empresas de Software y Servicios Informáticos",
         "location": "Agencia Calidad San Juan, San Juan",
-        "modality": "A distancia",
+        "modality": {
+          "id": "8013d5e4-f111-446f-96f7-21d0a1364db6",
+          "type": "A distancia"
+        },
         "schedule": 96,
         "date": "Desde el 7 de Junio de 2021 hasta el 13 de Agosto del mismo año",
-        "isCertified": false,
-        "certificate": {}
+        "isCertified": false
       },
       {
         "id": "8370f24c-8ca6-4992-8486-5d5fb661a86b",
-        "category": "Curso de Programación",
+        "category": {
+          "id": "0039f7f3-9441-4f89-9162-eba7a55c71d4",
+          "name": "Curso de Programación"
+        },
         "description": "#YoProgramoSanJuan, con certificado otorgado por WeCode a través de CESSI",
         "location": "Agencia Calidad San Juan, San Juan",
-        "modality": "A distancia",
+        "modality": {
+          "id": "f5d54547-8be6-4eec-8d23-3bc267d4a528",
+          "type": "A distancia"
+        },
         "schedule": 150,
         "date": "Desde el 30 de Agosto de 2021 hasta el 22 de Diciembre del mismo año",
         "isCertified": true,

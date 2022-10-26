@@ -14,13 +14,25 @@
         <ul>
           <li>Age: {{ jsonData.person.age }}</li>
           <li>Mail: {{ jsonData.person.email }}</li>
-          <li>Phone: {{ jsonData.person.phone }}</li>
-          <li>Address: {{ jsonData.person.address.homeAddress }}</li>
+          <li>
+            Phone:
+            <span *ngFor="let item of jsonData.person.phone">
+              {{ item.number }}
+            </span>
+          </li>
+          <li>
+            Address:
+            <span *ngFor="let item of jsonData.person.address">
+              {{ item.description }}
+            </span>
+          </li>
           <li>
             Social:
-            <a target="_blank" [attr.href]="jsonData.person.social.link">
-              {{ jsonData.person.social.link }}
-            </a>
+            <span *ngFor="let item of jsonData.person.social">
+              <a target="_blank" [attr.href]="item.link">
+                {{ item.link }}
+              </a>
+            </span>
           </li>
         </ul>
       </div>
@@ -43,11 +55,11 @@
           *ngFor="let item of jsonData.person.education"
         >
           <h5>
-            {{ item.category }}
+            {{ item.category.name }}
             <span class="text-muted">({{ item.schedule }} horas)</span>
           </h5>
           <p>
-            <i [style.color]="'grey'">Modalidad:</i> {{ item.modality }}
+            <i [style.color]="'grey'">Modalidad:</i> {{ item.modality.type }}
             <br />
             <i [style.color]="'grey'">Lugar:</i> {{ item.location }}
             <br />
@@ -60,7 +72,9 @@
               <i [style.color]="'grey'">ID:</i> {{ item.certificate.id }}
               <br />
               <i [style.color]="'grey'">URL:</i>
-              <a [attr.href]="item.certificate.url"> {{ item.certificate.url }}</a>
+              <a [attr.href]="item.certificate.url">
+                {{ item.certificate.url }}</a
+              >
               <br />
             </span>
           </p>
@@ -127,7 +141,10 @@
           <h5>
             {{ skill.name }}
           </h5>
-          <ul [style.margin-bottom]="0" *ngFor="let technology of skill.technologies">
+          <ul
+            [style.margin-bottom]="0"
+            *ngFor="let technology of skill.technologies"
+          >
             <li>{{ technology.name }}</li>
           </ul>
         </div>
