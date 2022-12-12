@@ -10,6 +10,7 @@ body {
 
 #profile-picture {
   width: 100%;
+  border-radius: 1.3rem;
 }
 
 #resume-footer {

@@ -2,8 +2,8 @@
   "person": {
     "id": "3b8c0389-70fd-48ee-82dc-5751e59acd21",
     "name": "Cristian Quinto",
-    "age": 27,
-    "degree": "Jr. Web Developer",
+    "age": 28,
+    "degree": "Programador Full Stack Jr.",
     "email": "ezequielqmacias@gmail.com",
     "phone": [
       {
@@ -14,13 +14,14 @@
     "address": [
       {
         "id": "688e35b0-d767-41f1-98c6-dd87feea9280",
-        "type": "Home",
+        "type": "Hogar",
         "description": "Las Cañitas, Casa 36. Rawson"
       }
     ],
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "summary": "Actualmente estoy utilizando Java, Spring Boot y Angular para implementar mis proyectos. Durante las jornadas de trabajo en Obra Social Provincia dedico mi tiempo al desarrollo de un aplicación para móvil con Flutter y Dart. Trabajo sobre arquitecturas y patrones de diseño. Me baso en el trabajo de Robert C. Martin y Alistair Cockburn. Medium es una de las plataformas que visito a diario. Posee una gran variedad de artículos interesantes. En Educative.io tomo cursos de diferente índole para ampliar mis conocimientos -muy recomendable. También estoy finalizando con una segunda certificación nacional (la primera fue a través de CESSI en el año 2021) en el marco de la tercera etapa de Argentina Programa. Cuentan en este nuevo año con el respaldo del INTI y el Ministerio de Desarrollo Productivo. El curso termina en el mes de enero. Abierto al diálogo y a compartir ideas. ¡Todo suma!",
     "image": {
       "id": "117d502f-e933-45a9-a161-3bdfc6e6106f",
+      "alt": "Profile image generated from ui-avatars.com",
       "path": "https://ui-avatars.com/api/?name=Cristian+Quinto&size=255"
     },
     "social": [
@@ -158,10 +159,10 @@
     "jobs": [
       {
         "id": "19126777-3b32-4623-a2a8-d879b21d0f7b",
-        "position": "Java Developer",
+        "position": "Desarrollador Java",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
-        "startDate": "July 2021",
-        "finishDate": "December 2021",
+        "startDate": "Julio 2021",
+        "finishDate": "Diciembre 2021",
         "achievements": [
           {
             "id": "1c8459f8-3853-4d26-b5f6-0154ca437de0",
@@ -179,10 +180,10 @@
       },
       {
         "id": "7155439c-23ca-4046-9854-5a46a22d3503",
-        "position": "PHP Developer",
+        "position": "Desarrollador PHP",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
-        "startDate": "January 2022",
-        "finishDate": "March 2022",
+        "startDate": "Enero 2022",
+        "finishDate": "Marzo 2022",
         "achievements": [
           {
             "id": "c8e3a92d-f6c3-46c7-9c1b-72fbe865b96f",
@@ -200,10 +201,10 @@
       },
       {
         "id": "31a548a8-4fa2-4f41-a6d6-9ccc7c749f59",
-        "position": ".NET Developer",
+        "position": "Desarrollador .NET",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente sed pariatur sint exercitationem eos expedita eveniet veniam ullam, quia neque facilis dicta voluptatibus. Eveniet doloremque ipsum itaque obcaecati nihil.",
-        "startDate": "March 2022",
-        "finishDate": "Present",
+        "startDate": "Marzo 2022",
+        "finishDate": "Actualidad",
         "achievements": [
           {
             "id": "a1e31775-2d1d-45f0-ba53-542326d0e0db",
@@ -225,9 +226,10 @@
         "id": "4c4d6a26-88ee-47b1-bfb1-bee941434a62",
         "name": "AGME",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.",
-        "releaseDate": "September 2021",
+        "releaseDate": "Septiembre 2021",
         "image": {
           "id": "d7180092-5837-4054-b5a2-e240534006d9",
+          "alt": "Project image generated from ui-avatars.com",
           "path": "https://ui-avatars.com/api/?name=A+G&size=255"
         },
         "technologies": [
@@ -253,9 +255,10 @@
         "id": "bab79075-265a-429d-82be-d3103ef33291",
         "name": "INTI",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.",
-        "releaseDate": "January 2023",
+        "releaseDate": "Enero 2023",
         "image": {
           "id": "887fc3f0-db5e-44d4-aae1-c4d9d83dfd3a",
+          "alt": "Project image generated from ui-avatars.com",
           "path": "https://ui-avatars.com/api/?name=I+N&size=255"
         },
         "technologies": [

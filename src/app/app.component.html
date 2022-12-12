@@ -5,29 +5,29 @@
         <img
           id="profile-picture"
           [src]="jsonData.person.image.path"
-          [alt]="jsonData.person.image.id"
+          [alt]="jsonData.person.image.alt"
         />
       </div>
       <div class="col">
         <h1>{{ jsonData.person.name }}</h1>
         <h2>{{ jsonData.person.degree }}</h2>
         <ul>
-          <li>Age: {{ jsonData.person.age }}</li>
-          <li>Mail: {{ jsonData.person.email }}</li>
+          <li>Edad: {{ jsonData.person.age }}</li>
+          <li>Correo: {{ jsonData.person.email }}</li>
           <li>
-            Phone:
+            Teléfonos:
             <span *ngFor="let item of jsonData.person.phone">
               {{ item.number }}
             </span>
           </li>
           <li>
-            Address:
+            Direcciones:
             <span *ngFor="let item of jsonData.person.address">
               {{ item.description }}
             </span>
           </li>
           <li>
-            Social:
+            Redes:
             <span *ngFor="let item of jsonData.person.social">
               <a target="_blank" [attr.href]="item.link">
                 {{ item.link }}
@@ -41,14 +41,14 @@
   <div class="row">
     <div class="col">
       <div class="card">
-        <h2>Carrer Summary</h2>
+        <h2>Acerca de mí</h2>
         <p>{{ jsonData.person.summary }}</p>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h3>Education</h3>
+      <h3>Educación</h3>
       <div *ngIf="jsonData.person.education?.length">
         <div
           class="card position"
@@ -80,7 +80,7 @@
           </p>
         </div>
       </div>
-      <h3>Work Experience</h3>
+      <h3>Experiencia</h3>
       <div *ngIf="jsonData.person.jobs?.length">
         <div class="card position" *ngFor="let job of jsonData.person.jobs">
           <h5>{{ job.position }}</h5>
@@ -89,7 +89,7 @@
             <span>{{ job.finishDate }}</span>
           </h6>
           <p>{{ job.description }}</p>
-          <strong>Achievements:</strong>
+          <strong>Logros:</strong>
           <div *ngIf="job.achievements?.length">
             <ul
               [style.margin-bottom]="0"
@@ -100,7 +100,7 @@
           </div>
         </div>
       </div>
-      <h3>Projects</h3>
+      <h3>Proyectos</h3>
       <div *ngIf="jsonData.person.projects?.length">
         <div
           class="card position"
@@ -115,13 +115,13 @@
               <img
                 id="profile-picture"
                 [src]="project.image.path"
-                [alt]="project.image.id"
+                [alt]="project.image.alt"
               />
             </div>
             <div class="col">
               <p>{{ project.description }}</p>
               <strong *ngIf="project.technologies?.length">
-                Technologies:
+                Tecnologías:
               </strong>
               <span
                 class="badge badge-secondary mr-1"
@@ -135,7 +135,7 @@
       </div>
     </div>
     <div class="col-3">
-      <h3>Skills</h3>
+      <h3>Habilidades</h3>
       <div class="card" *ngIf="jsonData.person.skills?.length">
         <div *ngFor="let skill of jsonData.person.skills">
           <h5>
@@ -152,6 +152,6 @@
     </div>
   </div>
   <div id="resume-footer" class="row">
-    <div class="col">Copyright © {{ dateString }} | All Rights Reserved</div>
+    <div class="col">Copyright © {{ dateString }} | Todos Los Derechos Reservados</div>
   </div>
 </div>

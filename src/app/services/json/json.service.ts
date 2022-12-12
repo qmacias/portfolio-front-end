@@ -83,9 +83,11 @@ export class Address {
 
 export class Image {
   id: string;
+  alt: string;
   path: string;
   constructor(obj?: any) {
     this.id = obj?.id || null;
+    this.alt = obj?.alt || null;
     this.path = obj?.path || null;
   }
 }
